@@ -1,0 +1,33 @@
+{
+	// Required
+	"manifest_version": 2,
+	"name": "Mini Social Games",
+	"short_name": "MsGames",
+	"version": "0.1.0",
+
+	// Recommended
+	"default_locale": "en", //# if we put other languages
+	"description": "Now you can play games in your chrome without any new tab and then you can share with your friends the score.",
+	"icons": {
+		"128": "public/img/MsG.png",
+		"48": "public/img/MsG.png"
+	},
+	"browser_action": {
+		"default_icon": "public/img/MsG.png",
+		"default_popup": "popup.html",
+		"default_title": "Mini Social Games"
+	},
+	"permissions": [ 
+		"tabs",
+		"cookies",
+		"<all_urls>"
+	],
+	//"update_url": "http://path/to/updateInfo.xml",
+	"author": [
+		{
+			"name": "SrPatinhas",
+			"email": "migascc69@gmail.com",
+			"url": "https://github.com/SrPatinhas"
+		}
+	]
+}

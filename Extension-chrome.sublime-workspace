@@ -1,0 +1,879 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"as",
+				"assunto"
+			],
+			[
+				"mes",
+				"mensagem"
+			],
+			[
+				"ad",
+				"addClass	addClass"
+			],
+			[
+				"tit",
+				"titulo"
+			],
+			[
+				"a",
+				"a	<a>"
+			],
+			[
+				"label",
+				"label	<label>"
+			],
+			[
+				"fon",
+				"font_text"
+			],
+			[
+				"Ser",
+				"Server_final"
+			],
+			[
+				"mar",
+				"margin"
+			],
+			[
+				"pa",
+				"padding"
+			],
+			[
+				"champion",
+				"champion-tab"
+			],
+			[
+				"pas",
+				"pass_renew"
+			],
+			[
+				"pa_",
+				"pass_new"
+			],
+			[
+				"user",
+				"username"
+			],
+			[
+				"pos",
+				"post_old"
+			],
+			[
+				"addC",
+				"addClass	addClass"
+			],
+			[
+				"remove",
+				"removeClass	.removeClass"
+			],
+			[
+				"cou",
+				"count_all"
+			],
+			[
+				"im",
+				"imgcover"
+			],
+			[
+				"id",
+				"id_get"
+			],
+			[
+				"fad",
+				"fadeOut	.fadeOut()"
+			],
+			[
+				"add",
+				"addback	.addBack()"
+			],
+			[
+				"css",
+				"css	.css() - single"
+			],
+			[
+				"se",
+				"serialize	.serialize()"
+			],
+			[
+				"var",
+				"var_dump"
+			],
+			[
+				"bs3-ico",
+				"bs3-icon:glyphicon	bs3-icon-glyphicon"
+			],
+			[
+				"margin",
+				"margin-bottom"
+			],
+			[
+				"full",
+				"full_link"
+			],
+			[
+				"das",
+				"dashboard"
+			],
+			[
+				"max",
+				"max-height"
+			],
+			[
+				"di",
+				"display"
+			],
+			[
+				"bs3-b",
+				"bs3-button	bs3-button"
+			],
+			[
+				"get",
+				"get	$.get()"
+			],
+			[
+				"j",
+				"jQuery"
+			],
+			[
+				"bs3-col",
+				"bs3-col:2	bs3-col-2"
+			],
+			[
+				"inline",
+				"inline-block"
+			],
+			[
+				"inl",
+				"inline-block"
+			],
+			[
+				"bs3-",
+				"bs3-col	bs3-col"
+			],
+			[
+				"h",
+				"height"
+			],
+			[
+				"margin-",
+				"margin-left"
+			],
+			[
+				"ri",
+				"right"
+			],
+			[
+				"bs3-t",
+				"bs3-thumbnail	bs3-thumbnail"
+			],
+			[
+				"if",
+				"date_interval_create_from_date_string"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "/C/users/user/appdata/local/temp/sublime-sftp-browse-1403281201/svti_pt/httpdocs/contact.php",
+			"settings":
+			{
+				"buffer_size": 5426,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/C/users/user/appdata/local/temp/sublime-sftp-browse-1403281625/svti_pt/httpdocs/contact_send.php",
+			"settings":
+			{
+				"buffer_size": 1368,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"contents": "\n	<div class=\"well effect7\">\n		<div class=\"row\">\n			<div class='col-md-offset-2 col-md-8 text-center'>\n				<div class=\"page-header\">\n					<h1>Os Nossos Serviços <small><a href=\"#\">Ver todos!</a></small></h1>\n				</div>\n			</div>\n		</div>\n		<div class=\"row\">\n<?php\n		$count = 0;\n		$query= \"SELECT `id_servico`, `titulo`, `color`, `icone`, `descricao` FROM `servico` ORDER BY data DESC LIMIT 0,4 \";\n		$stmt = $mydb->prepare($query);\n		$stmt->execute(); \n\n		$stmt->bind_result($id_servico, $titulo, $color, $icone, $descricao);\n		while ($stmt->fetch()) {\n\n			$texto = (strlen($descricao) > 103) ? substr($descricao,0,100).'...' : $descricao;\n			if ($count == 0) { \n?>\n			<div id=\"first-box-feature\" class=\"col-xs-8 col-sm-4 col-lg-2 col-md-2 box-feature effect8\" style=\"background:<?=$color;?>\">\n<?php\n			} else {\n?>\n			<div class=\"col-xs-8 col-sm-4 col-lg-2 col-md-2 box-feature effect8\" style=\"background:<?=$color;?>\">\n<?php\n			}\n?>\n				<h3> <a href=\"post.php?t=services&id=<?=$id_servico?>\"><span class=\"<?=$icone;?>\" style=\"font-size: 4em;\"></span><?=$titulo;?></a></h3>\n				<p><?=$texto;?></p>\n			</div>\n<?php\n			$count++;\n		}\n		$stmt->close();\n?>\n",
+			"settings":
+			{
+				"buffer_size": 1151,
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"selected_items":
+		[
+			[
+				"pa",
+				"Package Control: Install Package"
+			],
+			[
+				"pac",
+				"Package Control: Install Package"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"p",
+				"Package Control: Remove Package"
+			],
+			[
+				"!",
+				"Snippet: #!/usr/bin/env"
+			],
+			[
+				"Snippet: !",
+				"Snippet: #!/usr/bin/env"
+			],
+			[
+				"Package Control: ",
+				"Package Control: Upgrade Package"
+			],
+			[
+				"clean",
+				"CleanCSS: Clean current file"
+			],
+			[
+				"cle",
+				"CleanCSS: Clean current file"
+			],
+			[
+				"Package Control: in",
+				"Package Control: Install Package"
+			],
+			[
+				"",
+				"HTML: Encode Special Characters"
+			]
+		],
+		"width": 464.0
+	},
+	"console":
+	{
+		"height": 146.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/G/wamp/www/svti_final/marketing/mail_spam.php",
+		"/C/users/user/appdata/local/temp/sublime-sftp-browse-1403280408/svti_pt/httpdocs/admin/promo.php",
+		"/C/users/user/appdata/local/temp/sublime-sftp-browse-1403264774/svti_pt/httpdocs/admin/js/AdminLTE/post-save.js",
+		"/C/users/user/appdata/local/temp/sublime-sftp-browse-1403278614/svti_pt/httpdocs/admin/edit/fix_begin.php",
+		"/C/users/user/appdata/local/temp/sublime-sftp-browse-1403277062/svti_pt/httpdocs/admin/edit/fix_begin.php",
+		"/C/users/user/appdata/local/temp/sublime-sftp-browse-1403277086/svti_pt/httpdocs/admin/promo.php",
+		"/C/users/user/appdata/local/temp/sublime-sftp-browse-1403265392/svti_pt/httpdocs/admin/edit/fix_begin.php",
+		"/C/users/user/appdata/local/temp/sublime-sftp-browse-1403275327/svti_pt/httpdocs/admin/edit/save.php",
+		"/C/users/user/appdata/local/temp/sublime-sftp-browse-1403273528/svti_pt/httpdocs/admin/edit/servico.php",
+		"/C/users/user/appdata/local/temp/sublime-sftp-browse-1403273502/svti_pt/httpdocs/admin/edit/area.php",
+		"/C/users/user/appdata/local/temp/sublime-sftp-browse-1403265656/svti_pt/httpdocs/admin/promo.php",
+		"/C/users/user/appdata/local/temp/sublime-sftp-browse-1403273053/svti_pt/httpdocs/admin/menu.php",
+		"/C/users/user/appdata/local/temp/sublime-sftp-browse-1403272940/svti_pt/httpdocs/index.php",
+		"/C/users/user/appdata/local/temp/sublime-sftp-browse-1403171028/svti_pt/httpdocs/items.php",
+		"/C/users/user/appdata/local/temp/sublime-sftp-browse-1403178865/svti_pt/httpdocs/top_slider.php",
+		"/C/users/user/appdata/local/temp/sublime-sftp-browse-1403178944/svti_pt/httpdocs/services.php",
+		"/C/users/user/appdata/local/temp/sublime-sftp-browse-1403178968/svti_pt/httpdocs/slider-client.php",
+		"/C/users/user/appdata/local/temp/sublime-sftp-browse-1403178920/svti_pt/httpdocs/slider-areas.php",
+		"/C/users/user/appdata/local/temp/sublime-sftp-browse-1403170917/svti_pt/httpdocs/post.php",
+		"/C/users/user/appdata/local/temp/sublime-sftp-browse-1403107925/svti_pt/httpdocs/admin/js/AdminLTE/post-save.js",
+		"/C/users/user/appdata/local/temp/sublime-sftp-browse-1403108792/svti_pt/httpdocs/admin/post/save.php",
+		"/C/users/user/appdata/local/temp/sublime-sftp-browse-1403111225/svti_pt/httpdocs/admin/edit/save.php",
+		"/C/users/user/appdata/local/temp/sublime-sftp-browse-1403264719/svti_pt/httpdocs/admin/areas.php",
+		"/C/users/user/appdata/local/temp/sublime-sftp-browse-1403265053/svti_pt/httpdocs/admin/servicos.php",
+		"/C/users/user/appdata/local/temp/sublime-sftp-browse-1403261103/svti_pt/httpdocs/footer.php",
+		"/G/GitHub/MLG/popup.html",
+		"/G/GitHub/MLG/public/js/jquery.reveal.js",
+		"/G/GitHub/MLG/public/css/popup.css",
+		"/G/GitHub/MLG/public/js/popup.js",
+		"/G/GitHub/MLG/public/js/menu.js",
+		"/G/GitHub/MLG/public/js/jquery.tooltipster.js",
+		"/C/users/user/appdata/local/temp/sublime-sftp-browse-1403178757/svti_pt/httpdocs/slider-areas.php",
+		"/C/Users/User/AppData/Local/Google/Chrome/User Data/Default/Extensions/gighmmpiobklfepjocnamgkkbiglidom/2.7.1_0/checkupdates.js",
+		"/C/Users/User/AppData/Local/Google/Chrome/User Data/Default/Extensions/gighmmpiobklfepjocnamgkkbiglidom/2.7.1_0/background.js",
+		"/C/Users/User/AppData/Local/Google/Chrome/User Data/Default/Extensions/gighmmpiobklfepjocnamgkkbiglidom/2.7.1_0/manifest.json",
+		"/C/Users/User/AppData/Local/Google/Chrome/User Data/Default/Extensions/gighmmpiobklfepjocnamgkkbiglidom/2.7.1_0/adblock_start_chrome.js",
+		"/C/users/user/appdata/local/temp/sublime-sftp-browse-1403108549/svti_pt/httpdocs/admin/edit/promo.php",
+		"/C/Users/User/AppData/Roaming/Mozilla/Firefox/Profiles/5y6rvu3v.default/extensions/map@quickmaps.me.xpi",
+		"/C/Users/User/AppData/Roaming/Mozilla/Firefox/Profiles/extensions/user.js",
+		"/G/GitHub/MLG/update.xml",
+		"/C/Users/User/AppData/Local/Temp/fz3temp-1/save_user.php",
+		"/C/Users/User/AppData/Roaming/Sublime Text 2/Packages/User/sftp_servers/svti_pt",
+		"/C/Users/User/AppData/Local/Temp/fz3temp-1/save_user.js",
+		"/G/wamp/www/svti_final/admin/js/AdminLTE/save_user.js",
+		"/G/wamp/www/SVTI/footer.php",
+		"/C/Users/User/AppData/Local/Temp/fz3temp-1/function.php",
+		"/C/Users/User/Downloads/access_log",
+		"/G/GitHub/MLG/manifest.json",
+		"/G/GitHub/MLG/_locales/pt/messages.json",
+		"/G/GitHub/MLG/_locales/en/messages.json",
+		"/G/wamp/www/svti_final/admin/config/login.php",
+		"/G/wamp/www/svti_final/admin/login.php",
+		"/G/wamp/www/svti_final/admin/menu.php",
+		"/C/Users/User/AppData/Local/Temp/Rar$DIa0.472/readXML.js",
+		"/C/Users/User/AppData/Local/Temp/Rar$DIa0.649/students.xml",
+		"/G/GitHub/update.xml",
+		"/G/wamp/www/svti_final/admin/save_user.php",
+		"/G/wamp/www/svti_final/admin/index.php",
+		"/G/wamp/www/SVTI/admin/post/delete.php",
+		"/G/wamp/www/SVTI/public/css/carousel.css",
+		"/G/wamp/www/SVTI/public/css/social-links.css",
+		"/G/wamp/www/SVTI/contact.php",
+		"/G/wamp/www/SVTI/admin/user_info.php",
+		"/G/wamp/www/SVTI/admin/footer.php",
+		"/G/wamp/www/SVTI/admin/config/function.php",
+		"/G/wamp/www/SVTI/admin/user_data.php",
+		"/G/wamp/www/SVTI/admin/save_user.php",
+		"/G/wamp/www/SVTI/admin/js/AdminLTE/save_user.js",
+		"/G/wamp/www/SVTI/about.php",
+		"/G/GitHub/MLG/public/css/font-awesome.css",
+		"/C/Users/User/Desktop/teste/index3.html",
+		"/C/Users/User/Desktop/teste/css/style.css",
+		"/C/Users/User/Desktop/teste/css/noJS.css",
+		"/C/Users/User/Desktop/teste/css/demo.css",
+		"/C/Users/User/Desktop/teste/index.html",
+		"/C/Users/User/AppData/Local/Temp/Rar$EXa0.716/index.html",
+		"/C/Users/User/AppData/Local/Temp/Rar$EXa0.361/demo.html",
+		"/C/Users/User/AppData/Local/Temp/Rar$DIa0.730/jquery.reveal.js",
+		"/G/GitHub/MLG/public/js/jquery.leanModal.js",
+		"/C/Users/User/AppData/Local/Temp/Rar$DIa0.645/reveal.css",
+		"/C/Users/User/AppData/Local/Temp/Rar$EXa0.583/demo/index.html",
+		"/C/Users/User/AppData/Local/Temp/Rar$DIa0.341/style.css",
+		"/C/Users/User/AppData/Local/Temp/Rar$EXa0.526/demo/index.html",
+		"/G/GitHub/MLG/_locales/pt_BR/messages.json",
+		"/G/wamp/www/SVTI/admin/login.php",
+		"/G/wamp/www/SVTI/admin/config/login.php",
+		"/C/Users/User/AppData/Local/Temp/Rar$DIa0.210/readme.txt",
+		"/C/Users/User/AppData/Local/Google/Chrome/User Data/Default/Extensions/edidfaijmhpefkbnobdcepampbncgejp/1.3.0.5_0/manifest.json",
+		"/C/Users/User/AppData/Local/Google/Chrome/User Data/Default/Extensions/edidfaijmhpefkbnobdcepampbncgejp/1.3.0.5_0/games/lol/game_lol.js",
+		"/C/Users/User/AppData/Local/Google/Chrome/User Data/Default/Extensions/edidfaijmhpefkbnobdcepampbncgejp/1.3.0.5_0/html/stream_notification.html",
+		"/C/Users/User/AppData/Local/Google/Chrome/User Data/Default/Extensions/edidfaijmhpefkbnobdcepampbncgejp/1.3.0.5_0/html/streams_bg.html",
+		"/C/Users/User/AppData/Local/Google/Chrome/User Data/Default/Extensions/edidfaijmhpefkbnobdcepampbncgejp/1.3.0.5_0/html/streams_popup.html",
+		"/G/GitHub/MLG/public/css/tooltipster.css",
+		"/C/Users/User/AppData/Local/Temp/Rar$EXa0.718/tooltipster-master/demo/index.html",
+		"/C/Users/User/AppData/Local/Google/Chrome/User Data/Default/Extensions/bffcllnfdoihnefjhalnfanpcfplkdip/2.2.0_0/_metadata/verified_contents.json",
+		"/C/Users/User/AppData/Roaming/Sublime Text 2/Packages/Default/Preferences.sublime-settings",
+		"/C/Users/User/AppData/Roaming/Sublime Text 2/Packages/User/Preferences.sublime-settings",
+		"/C/Users/User/AppData/Local/Temp/Rar$DIa0.174/tooltipster.css",
+		"/G/GitHub/MLG/popup.css",
+		"/G/GitHub/MLG/popup.js",
+		"/G/GitHub/MLG/menu.js",
+		"/G/wamp/www/svti_final/marketing/config/config.php",
+		"/G/wamp/www/Sistema_envio/view/cad_grupo.php",
+		"/G/wamp/www/Sistema_envio/model/connectDB.php",
+		"/G/wamp/www/Sistema_envio/model/usersmodel.php",
+		"/G/wamp/www/Sistema_envio/model/grupoclass.php",
+		"/G/wamp/www/Sistema_envio/controller/controller.php",
+		"/C/Users/User/Desktop/ExpandingSearchBar/index.html",
+		"/C/Users/User/Desktop/ExpandingSearchBar/js/uisearch.js",
+		"/C/Users/User/Desktop/ExpandingSearchBar/js/classie.js",
+		"/C/Users/User/Desktop/ExpandingSearchBar/js/modernizr.custom.js",
+		"/G/GitHub/popcorn-mobile/frontend/www/index.html",
+		"/G/wamp/www/svti_final/admin/edit/save.php",
+		"/G/wamp/www/svti_final/admin/post/publish.php",
+		"/G/wamp/www/svti_final/admin/post/save.php",
+		"/G/wamp/www/svti_final/admin/user_info.php",
+		"/G/wamp/www/svti_final/admin/user_data.php",
+		"/G/wamp/www/svti_final/admin/mail.php",
+		"/G/wamp/www/SVTI/index.php",
+		"/G/wamp/www/SVTI/header.php",
+		"/G/wamp/www/SVTI/admin/header.php",
+		"/G/wamp/www/svti_final/admin/footer.php",
+		"/G/wamp/www/svti_final/admin/config/passwordLib.php",
+		"/G/wamp/www/svti_final/admin/config/logout.php",
+		"/G/wamp/www/svti_final/admin/config/get_function.php",
+		"/G/wamp/www/svti_final/admin/config/functions.php",
+		"/G/wamp/www/svti_final/admin/config/function.php",
+		"/G/wamp/www/svti_final/admin/config/config.php"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+			"G:\\wamp\\www\\svti_final",
+			"G:\\wamp\\www\\SVTI\\admin",
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"[value-",
+			"_POST",
+			"//",
+			"echo",
+			"get",
+			"GET",
+			"id_area",
+			"span",
+			"//",
+			"# code...",
+			"`",
+			" href=\"#\"",
+			"[",
+			"transaction",
+			"[",
+			"Server",
+			"data-search",
+			"search",
+			"Left",
+			"RightPos",
+			"posright",
+			"left",
+			"Left",
+			"left",
+			"Left",
+			"left",
+			"cssmenu",
+			"#",
+			"#cssmenu",
+			"cssmenu",
+			"#cssmenu",
+			"<span",
+			"span",
+			"position",
+			"Position",
+			"position",
+			"Position",
+			"position",
+			"Position",
+			"position",
+			"Position",
+			"position",
+			"Position",
+			"position",
+			"Position",
+			"position",
+			"dismissmodalclass",
+			"close",
+			"Close",
+			"close",
+			"Close",
+			"close",
+			"title",
+			"data-link",
+			"champion",
+			"Champion",
+			"champion",
+			"Champion",
+			"champion",
+			"search_ok ",
+			" class=\"float-left\"",
+			"#",
+			"img-circle",
+			"/admin/",
+			"save_user",
+			"/admin",
+			"http://svti.pt",
+			"book",
+			"d",
+			"version_about",
+			"href",
+			"new_link",
+			"href",
+			"/SVTI/",
+			"nickname",
+			",",
+			"'http:",
+			"	//",
+			"champions",
+			"fonts",
+			"rel",
+			"\"",
+			"last",
+			"3",
+			"5",
+			"<i class=\"icon-",
+			"fullSearch-dropdown",
+			"dropdown",
+			"DropDown",
+			"dropdown",
+			"gf",
+			"wrapper-dropdown-3",
+			"Middle",
+			"\">",
+			"value",
+			" id=\"openMobafire\" ",
+			"champion-id=\"\"",
+			"champion-id",
+			"value",
+			"class",
+			"data-champion=\"aatrox\" c",
+			"style",
+			" id=\"sel2CO_chzn_o_",
+			" id=\"sel2CO_chzn_o_0\" class=\"active-result\"",
+			"#",
+			"li",
+			"1px solid #D8D8D8",
+			"name",
+			"$li",
+			",\n			\"value\": \"\"",
+			"\n			\"url\" : \"file:///G:/GitHub/MLG\",",
+			"name:",
+			"//",
+			"G:/GitHub",
+			"*://*.google.com",
+			"chrome-extension://fggndoonclbljilidplhgnbaljdbjeog/*",
+			"summoners",
+			"*//fggndoonclbljilidplhgnbaljdbjeog/*",
+			"\"*//",
+			"fggndoonclbljilidplhgnbaljdbjeog",
+			"chrome-extension://",
+			"chrome-extension://fggndoonclbljilidplhgnbaljdbjeog/*",
+			"://*",
+			".google.com",
+			"com",
+			"http",
+			"url",
+			"theme"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			" data-full=\"dashboard/\" data-link=\"dashboard.php\""
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "/C/users/user/appdata/local/temp/sublime-sftp-browse-1403281201/svti_pt/httpdocs/contact.php",
+					"settings":
+					{
+						"buffer_size": 5426,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								54,
+								54
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close"
+							],
+							"incomplete_sync": null,
+							"is_remote": true,
+							"remote_loading": false,
+							"synced": true,
+							"syntax": "Packages/HTML5/Syntaxes/HTML 5.tmLanguage",
+							"tmp_dir": "c:\\users\\user\\appdata\\local\\temp\\sublime-sftp-browse-1403281201\\svti_pt\\",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "/C/users/user/appdata/local/temp/sublime-sftp-browse-1403281625/svti_pt/httpdocs/contact_send.php",
+					"settings":
+					{
+						"buffer_size": 1368,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								637,
+								637
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close"
+							],
+							"incomplete_sync": null,
+							"is_remote": true,
+							"remote_loading": false,
+							"synced": true,
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tmp_dir": "c:\\users\\user\\appdata\\local\\temp\\sublime-sftp-browse-1403281625\\svti_pt\\"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"settings":
+					{
+						"buffer_size": 1151,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1150,
+								1073
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close"
+							],
+							"incomplete_sync": null,
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 0.0
+	},
+	"input":
+	{
+		"height": 35.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.sftp":
+	{
+		"height": 48.0
+	},
+	"output.unsaved_changes":
+	{
+		"height": 777.0
+	},
+	"replace":
+	{
+		"height": 0.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"selected_items":
+		[
+			[
+				"",
+				"/C/Users/User/Google Drive/teste/teste_2.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 201.0,
+	"status_bar_visible": true
+}
