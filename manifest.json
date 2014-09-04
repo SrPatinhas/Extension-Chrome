@@ -6,7 +6,7 @@
 	"version": "0.1.0",
 
 	// Recommended
-	"default_locale": "en", //# if we put other languages
+	//"default_locale": "en", //# if we put other languages
 	"description": "Now you can play games in your chrome without any new tab and then you can share with your friends the score.",
 	"icons": {
 		"128": "public/img/MsG.png",
